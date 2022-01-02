@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3d1010;
+  border: none;
+}
+
+#content {
+  background-image: url('https://i.pinimg.com/originals/76/f2/3e/76f23ef08dc1ebabf4589ca0daa1fc14.jpg');
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 700px;
+
+
+  background-size: cover;
+  text-align: center;
+}
+
+#login-container{
+margin-top: 200px;
+align-items: center;
+background-color: #f0efef;
+}
+
+#register-container{
+  align-items: center;
+  background-color: #f0efef;
+  }
+
+  #logar{
+    align-items: center;
+    padding: 10px;
+    margin-left: 230px;
+  }
+
+  .wrapper{
+    display: grid;
+  }
