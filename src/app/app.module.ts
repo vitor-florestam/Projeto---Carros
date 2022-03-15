@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule} from '@angular/material/button';
@@ -15,15 +16,19 @@ import { NavComponent } from './components/nav/nav.component';
 
 import {MatSidenavModule} from'@angular/material/sidenav';
 import {MatListModule} from'@angular/material/list';
-import { HomeComponent } from './partes-da-navbar/home/home.component';
-import { CarrosCrudComponent } from './partes-da-navbar/carros-crud/carros-crud.component';
-import { FavoritosComponent } from './partes-da-navbar/favoritos/favoritos.component';
-import { UsuariosCrudComponent } from './partes-da-navbar/usuarios-crud/usuarios-crud.component';
-import { UploadComponent } from './partes-da-navbar/upload/upload.component';
-import { StorageComponent } from './partes-da-navbar/storage/storage.component';
-import { ChartsComponent } from './partes-da-navbar/charts/charts.component';
-import { PushComponent } from './partes-da-navbar/push/push.component';
-import { InfoComponent } from './partes-da-navbar/info/info.component';
+import { HomeComponent } from './dashboard/home/home.component';
+import { CarrosCrudComponent } from './dashboard/carros-crud/carros-crud.component';
+import { FavoritosComponent } from './dashboard/favoritos/favoritos.component';
+import { UsuariosCrudComponent } from './dashboard/usuarios-crud/usuarios-crud.component';
+import { UploadComponent } from './dashboard/upload/upload.component';
+import { StorageComponent } from './dashboard/storage/storage.component';
+import { ChartsComponent } from './dashboard/charts/charts.component';
+import { PushComponent } from './dashboard/push/push.component';
+import { InfoComponent } from './dashboard/info/info.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 
@@ -41,7 +46,9 @@ import { InfoComponent } from './partes-da-navbar/info/info.component';
     StorageComponent,
     ChartsComponent,
     PushComponent,
-    InfoComponent
+    InfoComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +58,10 @@ import { InfoComponent } from './partes-da-navbar/info/info.component';
     MatInputModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
